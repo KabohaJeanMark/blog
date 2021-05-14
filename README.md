@@ -1,24 +1,29 @@
-# README
+# blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the sample application for a blog app
 
-Things you may want to cover:
+## Getting started
 
-* Ruby version
+To get started with the app, clone the repo and then install the needed gems:
 
-* System dependencies
+```
+$ gem install bundler -v 2.2.17
+$ bundle _2.2.17_ config set --local without 'production'
+$ bundle _2.2.17_ install
+```
 
-* Configuration
+Next, migrate the database:
 
-* Database creation
+```
+$ rails db:migrate
+```
 
-* Database initialization
+Finally, run the rails server command
 
-* How to run the test suite
+```
+$ rails server
+```
+Check out the following route
+/articles/
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You can access the CRUD methods with the links on the show page
